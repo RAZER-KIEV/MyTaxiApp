@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="ua.kiev.netmaster.mytaxiapp.domain.ChosenOrderActivity"
+    android:background="@drawable/marville_1_taxi_driver">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="#ec383637"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Order info: Id is  - "
+            android:id="@+id/orderInfoTV"
+            android:textColor="#16ff17" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="From:"
+            android:id="@+id/fromTV"
+            android:textColor="#16ff17" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="To: "
+            android:id="@+id/toTV"
+            android:textColor="#16ff17" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Order Date/Time: "
+            android:id="@+id/orderDate"
+            android:textColor="#16ff17" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="OrderSum:  "
+            android:id="@+id/orderSum"
+            android:textColor="#16ff17" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:layout_marginTop="5dp"
+        android:background="#ec383637"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Client info: id is - "
+            android:id="@+id/clientInfoTV"
+            android:textColor="#ff08f0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Full name: "
+            android:id="@+id/fnTV"
+            android:textColor="#ff08f0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Phone: "
+            android:id="@+id/phoneTV"
+            android:textColor="#00daff"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Total sum client: "
+            android:id="@+id/totalSumClient"
+            android:textColor="#ff08f0" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Accept Order!"
+                android:id="@+id/acceptOrderBT"
+                android:layout_weight="0.5"
+                android:background="#068b11"
+                android:textSize="30dp"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Back"
+                android:id="@+id/backButtonBT"
+                android:layout_weight="0.5"
+                android:background="#8d0700"
+                android:clickable="false"
+                android:textSize="30dp"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

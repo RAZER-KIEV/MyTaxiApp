@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="adressFrom"
+                    android:id="@+id/adressFrom"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:background="#c8ffea8d"
+                    android:clickable="true"
+                    android:textColor="#010101" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="orderCoast"
+                    android:id="@+id/orderCoast"
+                    android:layout_column="1"
+                    android:background="#d96dff18"
+                    android:textColor="#010101" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="adressTo"
+                    android:id="@+id/adressTo"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    android:background="#cdbcd8ff"
+                    android:clickable="true"
+                    android:textColor="#010101" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="clientPhone"
+                    android:id="@+id/clientPhone"
+                    android:layout_column="1"
+                    android:background="#e06dff18"
+                    android:textColor="#010101" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+</RelativeLayout>
